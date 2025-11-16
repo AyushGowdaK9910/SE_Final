@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "pretest": "mkdir -p /tmp && touch /tmp/jest-localstorage-$$ || true",
+    "test": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage' jest",
+    "test:watch": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage' jest --watch",
     "lint": "eslint src tests --ext .ts",
     "lint:fix": "eslint src tests --ext .ts --fix"
   },
