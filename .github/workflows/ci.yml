@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main, 'ananya/dev', 'anivartha/dev', 'ayush/dev' ]
+    branches: [ main, ananya/dev, anivartha/dev, ayush/dev ]
   pull_request:
     branches: [ main ]
 
@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: ${{ matrix.folder }}/package-lock.json
+          cache-dependency-path: ${{ matrix.folder }}/package.json
       
       - name: Install dependencies
         working-directory: ${{ matrix.folder }}
@@ -32,7 +32,6 @@ jobs:
         working-directory: ${{ matrix.folder }}
         run: npm run build
       
-      - name: Run tests
+      - name: Test
         working-directory: ${{ matrix.folder }}
         run: npm test
-
