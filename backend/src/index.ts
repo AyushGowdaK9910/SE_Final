@@ -6,7 +6,6 @@
 import dotenv from 'dotenv';
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
-import { HealthCheck } from './ayush/server/healthcheck';
 
 // Load environment variables
 dotenv.config();
