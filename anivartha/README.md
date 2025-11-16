@@ -29,6 +29,14 @@ npm run build
 npm test
 ```
 
+## Assigned CON Keys
+
+- CON-1: File upload handling
+- CON-5: Rejecting unsupported/corrupted files
+- CON-3: Download endpoint
+- CON-6: Performance optimization
+- CON-8: Quick conversions
+
 ## Testing
 
 Run unit tests:
