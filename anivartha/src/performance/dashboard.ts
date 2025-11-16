@@ -19,7 +19,7 @@ export class PerformanceDashboard {
     return { ...this.metrics };
   }
 
-  recordConversion(durationMs: number, success: boolean): void {
+  recordConversion(_durationMs: number, _success: boolean): void {
     this.metrics.totalConversions++;
     // TODO: Calculate actual averages
   }

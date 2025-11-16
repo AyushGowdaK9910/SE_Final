@@ -11,7 +11,7 @@ export class MimeValidator {
     'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
   ];
 
-  validateMimeType(mimeType: string, extension: string): boolean {
+  validateMimeType(mimeType: string, _extension: string): boolean {
     return this.allowedMimeTypes.includes(mimeType);
   }
 

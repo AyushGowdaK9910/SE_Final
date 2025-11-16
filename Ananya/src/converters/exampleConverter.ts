@@ -7,7 +7,7 @@ export class ExampleConverter {
   /**
    * Convert MD to PDF (stub)
    */
-  async convertMdToPdf(mdContent: string): Promise<Buffer> {
+  async convertMdToPdf(_mdContent: string): Promise<Buffer> {
     // TODO: Implement actual MD to PDF conversion
     return Buffer.from('PDF content placeholder');
   }
@@ -15,7 +15,7 @@ export class ExampleConverter {
   /**
    * Convert CSV to JSON (stub)
    */
-  async convertCsvToJson(csvContent: string): Promise<string> {
+  async convertCsvToJson(_csvContent: string): Promise<string> {
     // TODO: Implement actual CSV to JSON conversion
     return JSON.stringify({ data: 'placeholder' });
   }

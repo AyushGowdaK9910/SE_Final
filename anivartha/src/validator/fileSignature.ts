@@ -6,7 +6,7 @@ export class FileSignatureValidator {
   /**
    * Check file signature (magic bytes)
    */
-  validateFileSignature(buffer: Buffer, expectedType: string): boolean {
+  validateFileSignature(buffer: Buffer, _expectedType: string): boolean {
     // TODO: Implement actual file signature validation
     // Check magic bytes at start of file
     if (buffer.length === 0) {

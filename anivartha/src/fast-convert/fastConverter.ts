@@ -12,7 +12,7 @@ export class FastConverter {
   /**
    * Convert file in memory (stub)
    */
-  async convert(sourceBuffer: Buffer, sourceFormat: string, targetFormat: string): Promise<ConversionResult> {
+  async convert(_sourceBuffer: Buffer, _sourceFormat: string, _targetFormat: string): Promise<ConversionResult> {
     const startTime = Date.now();
     
     // TODO: Implement actual conversion logic

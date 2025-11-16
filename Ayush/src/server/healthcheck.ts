@@ -6,7 +6,7 @@
 import { Request, Response } from 'express';
 
 export class HealthCheck {
-  health(req: Request, res: Response): void {
+  health(_req: Request, res: Response): void {
     res.json({
       status: 'ok',
       timestamp: new Date().toISOString(),
@@ -14,11 +14,11 @@ export class HealthCheck {
     });
   }
 
-  liveness(req: Request, res: Response): void {
+  liveness(_req: Request, res: Response): void {
     res.json({ alive: true });
   }
 
-  readiness(req: Request, res: Response): void {
+  readiness(_req: Request, res: Response): void {
     // TODO: Check database connectivity, etc.
     res.json({ ready: true });
   }

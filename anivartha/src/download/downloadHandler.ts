@@ -2,7 +2,7 @@
 // TODO: Implement download endpoint
 
 export class DownloadHandler {
-  async downloadFile(fileId: string, format: string): Promise<Buffer> {
+  async downloadFile(_fileId: string, _format: string): Promise<Buffer> {
     // TODO: Implement file download
     return Buffer.from('');
   }

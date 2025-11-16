@@ -9,7 +9,7 @@ const app: Application = express();
 app.use(express.json());
 
 // Example typed endpoint
-app.get('/api/example', (req: Request, res: Response): void => {
+app.get('/api/example', (_req: Request, res: Response): void => {
   res.json({ message: 'Example endpoint', timestamp: new Date() });
 });
 
