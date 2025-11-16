@@ -28,11 +28,18 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ${{ matrix.folder }}/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('${{ matrix.folder }}/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('${{ matrix.folder }}/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       
       - name: Install dependencies
         working-directory: ${{ matrix.folder }}
-        run: npm ci
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
       
       - name: Build
         working-directory: ${{ matrix.folder }}
