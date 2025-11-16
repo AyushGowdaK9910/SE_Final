@@ -1,4 +1,4 @@
-import { UploadHandler } from '../src/upload/uploadHandler';
+import { UploadHandler } from '../src/anivartha/upload/uploadHandler';
 
 describe('UploadHandler', () => {
   it('should handle file upload', async () => {

@@ -3,7 +3,7 @@
  */
 
 import request from 'supertest';
-import app from '../src/server/server';
+import app from '../src/ayush/server/server';
 
 describe('Integration Tests', () => {
   it('should handle full request flow', async () => {
