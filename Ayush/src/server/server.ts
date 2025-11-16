@@ -1,11 +1,19 @@
-// Typed Express server
-// TODO: Implement server with example endpoints
+/**
+ * Typed Server with Example Endpoints
+ */
 
 import express, { Application, Request, Response } from 'express';
 
 const app: Application = express();
 
-app.get('/health', (_req: Request, res: Response) => {
+app.use(express.json());
+
+// Example typed endpoint
+app.get('/api/example', (req: Request, res: Response): void => {
+  res.json({ message: 'Example endpoint', timestamp: new Date() });
+});
+
+app.get('/health', (_req: Request, res: Response): void => {
   res.json({ status: 'ok' });
 });
 
