@@ -11,8 +11,12 @@ import cors from 'cors';
 dotenv.config();
 
 // Import modules
-import app from './ayush/server/server';
+// TODO: Integrate actual modules from ananya, anivartha, ayush
+// For now, using basic Express app
+import express, { Application } from 'express';
 import { HealthCheck } from './ayush/server/healthcheck';
+
+const app: Application = express();
 
 const PORT = process.env.PORT || 3000;
 
