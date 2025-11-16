@@ -6,16 +6,12 @@
 import dotenv from 'dotenv';
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
+import { HealthCheck } from './ayush/server/healthcheck';
 
 // Load environment variables
 dotenv.config();
 
-// Import modules
-// TODO: Integrate actual modules from ananya, anivartha, ayush
-// For now, using basic Express app
-import express, { Application } from 'express';
-import { HealthCheck } from './ayush/server/healthcheck';
-
+// Create Express app
 const app: Application = express();
 
 const PORT = process.env.PORT || 3000;
@@ -27,7 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Health check endpoint
 app.get('/health', (_req: Request, res: Response): void => {
-  const healthCheck = new HealthCheck();
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
@@ -59,7 +54,7 @@ app.post('/api/files/convert', (req: Request, res: Response): void => {
 });
 
 // Stub upload endpoint
-app.post('/api/files/upload', (req: Request, res: Response): void => {
+app.post('/api/files/upload', (_req: Request, res: Response): void => {
   // TODO: Integrate actual upload logic from anivartha modules
   res.json({
     success: true,
