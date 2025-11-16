@@ -1,0 +1,51 @@
+# Code Ownership Mapping
+
+This file documents where each team member's code has been moved in the reorganized repository structure.
+
+## Ananya Joshi
+
+**Original Location**: `Ananya/`
+**New Location**: `backend/src/ananya/`
+
+**Responsibilities**:
+- Logging and data retention (`backend/src/ananya/logging/`)
+- Security/encryption for API traffic (`backend/src/ananya/encryption/`)
+- Conversion core (`backend/src/ananya/converters/`)
+- Data retention policy (`backend/src/ananya/data-retention/`)
+
+**Issue Keys**: CON-4, CON-10, CON-2, CON-11
+
+## anivartha
+
+**Original Location**: `anivartha/`
+**New Location**: `backend/src/anivartha/`
+
+**Responsibilities**:
+- File upload handling (`backend/src/anivartha/upload/`)
+- File validation (`backend/src/anivartha/validator/`)
+- Download endpoint (`backend/src/anivartha/download/`)
+- Performance optimization (`backend/src/anivartha/performance/`)
+- Fast conversions (`backend/src/anivartha/fast-convert/`)
+
+**Issue Keys**: CON-1, CON-5, CON-3, CON-6, CON-8
+
+## Ayush
+
+**Original Location**: `Ayush/`
+**New Location**: `backend/src/ayush/`
+
+**Responsibilities**:
+- API documentation (`backend/src/ayush/docs/`)
+- Server setup (`backend/src/ayush/server/`)
+- Availability / reliability SLO (`backend/src/ayush/availability/`)
+- CI/CD pipeline (`.github/workflows/ci.yml`)
+
+**Issue Keys**: CON-7, CON-9, CON-12, CON-17, CON-18
+
+## Notes
+
+- All backend code has been consolidated into `backend/src/` while preserving original folder structure
+- Tests have been moved to `backend/tests/` with the same structure
+- Original folders (`Ananya/`, `anivartha/`, `Ayush/`) are preserved for reference
+- See individual `README.moved.md` files in each person's folder for detailed file mappings
+
