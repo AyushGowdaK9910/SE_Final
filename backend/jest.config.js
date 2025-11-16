@@ -7,10 +7,10 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov', 'html'],
   setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
-  globals: {
-    'ts-jest': {
+  transform: {
+    '^.+\\.ts$': ['ts-jest', {
       tsconfig: 'tsconfig.test.json',
-    },
+    }],
   },
 };
 
