@@ -35,3 +35,10 @@ Run unit tests:
 npm test
 ```
 
+## Assigned CON Keys
+
+- CON-4: Logging and data retention
+- CON-10: Security/encryption for API traffic
+- CON-2: Conversion core
+- CON-11: Data retention policy
+
