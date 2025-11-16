@@ -1,3 +1,20 @@
-# Commits for ayush/dev branch
-# This file will be populated after commits are created
-
+ayush: init node+typescript scaffold and README
+ayush: add tsconfig, package.json, eslint and basic scripts
+ayush: add typed server.ts with example endpoints
+ayush: add OpenAPI spec skeleton for the API
+ayush: add api-docs generator script and docs placeholder
+ayush: add healthcheck and liveness endpoints (SLO work)
+ayush: add retry and circuit-breaker placeholder for availability
+ayush: add tests for server and docs generation
+ayush: add Github Actions CI workflow (ci.yml) to root
+ayush: wire up build/test commands and caching in CI
+ayush: add docs page and script to serve static docs
+ayush: add API documentation content for conversion endpoints
+ayush: add README with availability SLO (99.5%) explanation
+ayush: add infra/notes for deployment and uptime checks
+ayush: add commits.log listing this branch's commits
+ayush: fix lint and typescript build issues
+ayush: add sample integration test to validate full flow
+ayush: add CI badge to root README
+ayush: finalize Node+TS environment and developer guide
+ayush: merge-ready cleanup and comments

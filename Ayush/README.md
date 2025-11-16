@@ -36,3 +36,12 @@ Run unit tests:
 npm test
 ```
 
+## Availability SLO
+
+Target: 99.5% availability
+
+- Health checks: `/health`, `/liveness`, `/readiness`
+- Retry logic with exponential backoff
+- Circuit breaker pattern for fault tolerance
+- Monitoring and alerting setup
+
