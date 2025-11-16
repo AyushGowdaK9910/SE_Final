@@ -32,11 +32,10 @@
     "vitest": "^1.0.4",
     "@testing-library/react": "^14.1.2",
     "@testing-library/jest-dom": "^6.1.5",
-    "@vitejs/plugin-react": "^4.2.1"
+    "jsdom": "^23.0.1"
   },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
   }
 }
-
