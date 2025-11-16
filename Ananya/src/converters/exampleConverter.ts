@@ -1,15 +1,22 @@
-// Example converter stub
-// TODO: Implement MD -> PDF and CSV -> JSON converters
+/**
+ * Example Converter Integration
+ * MD -> PDF converter stub demonstrating the pipeline
+ */
 
 export class ExampleConverter {
-  async convertMDtoPDF(mdContent: string): Promise<Buffer> {
-    // TODO: Implement MD to PDF conversion
-    return Buffer.from('');
+  /**
+   * Convert MD to PDF (stub)
+   */
+  async convertMdToPdf(mdContent: string): Promise<Buffer> {
+    // TODO: Implement actual MD to PDF conversion
+    return Buffer.from('PDF content placeholder');
   }
 
-  async convertCSVtoJSON(csvContent: string): Promise<object> {
-    // TODO: Implement CSV to JSON conversion
-    return {};
+  /**
+   * Convert CSV to JSON (stub)
+   */
+  async convertCsvToJson(csvContent: string): Promise<string> {
+    // TODO: Implement actual CSV to JSON conversion
+    return JSON.stringify({ data: 'placeholder' });
   }
 }
-

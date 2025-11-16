@@ -1,3 +1,20 @@
-# Commits for ananya/dev branch
-# This file will be populated after commits are created
-
+ananya: init logging module and project README
+ananya: add conversion-logging model and DB stub
+ananya: implement log write API (append-only)
+ananya: add basic retention policy script (retain 1 year)
+ananya: add log rotation cron job stub
+ananya: add unit tests for logging and rotation
+ananya: implement conversion record schema validation
+ananya: integrate logging with conversion pipeline (stubbed)
+ananya: add encryption enforcement wrapper (reject http)
+ananya: add tests for encryption enforcement wrapper
+ananya: add docs for logging and retention policy
+ananya: implement secure log transport interface (TLS-ready stub)
+ananya: improve error handling and add metrics instrumentation
+ananya: add example converter integration (md->pdf stub)
+ananya: update README with usage and assigned CON keys
+ananya: add CI test script for logging module
+ananya: fix linting errors and test failures
+ananya: add commits.log listing this branch's commits
+ananya: version bump and finalize logging module
+ananya: merge-ready cleanup and comments
