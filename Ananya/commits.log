@@ -18,3 +18,5 @@ ananya: fix linting errors and test failures
 ananya: add commits.log listing this branch's commits
 ananya: version bump and finalize logging module
 ananya: merge-ready cleanup and comments
+
+2024-11-17: Repository reorganization - files moved to backend/src/ananya/ and backend/tests/ananya/. See README.moved.md for details.

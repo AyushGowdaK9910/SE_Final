@@ -18,3 +18,5 @@ anivartha: add commits.log listing this branch's commits
 anivartha: fix lint and test issues
 anivartha: add basic performance dashboard stub
 anivartha: merge-ready cleanup and comments
+
+2024-11-17: Repository reorganization - files moved to backend/src/anivartha/ and backend/tests/anivartha/. See README.moved.md for details.

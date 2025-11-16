@@ -18,3 +18,5 @@ ayush: add sample integration test to validate full flow
 ayush: add CI badge to root README
 ayush: finalize Node+TS environment and developer guide
 ayush: merge-ready cleanup and comments
+
+2024-11-17: Repository reorganization - files moved to backend/src/ayush/ and backend/tests/ayush/. See README.moved.md for details.
