@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "description": "API documentation, server setup, and CI/CD modules",
   "main": "dist/server.js",
+  "bin": {
+    "converty-server": "./dist/server.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/server/server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "pretest": "mkdir -p /tmp || true",
     "test": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage-ayush-$$' jest",
     "test:watch": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage-ayush-$$' jest --watch",
