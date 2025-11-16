@@ -20,6 +20,22 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Root endpoint
+app.get('/', (_req: Request, res: Response): void => {
+  res.json({
+    name: 'Converty API',
+    version: '1.0.0',
+    status: 'running',
+    endpoints: {
+      health: '/health',
+      upload: 'POST /api/files/upload',
+      convert: 'POST /api/files/convert',
+      example: 'GET /api/example',
+    },
+    documentation: 'See README.md for API documentation',
+  });
+});
+
 // Health check endpoint
 app.get('/health', (_req: Request, res: Response): void => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
