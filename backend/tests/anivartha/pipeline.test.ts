@@ -2,8 +2,8 @@
  * Tests for Download and Pipeline End-to-End
  */
 
-import { DownloadHandler } from '../src/anivartha/download/downloadHandler';
-import { UploadPipeline } from '../src/anivartha/upload/pipeline';
+import { DownloadHandler } from '../../src/anivartha/download/downloadHandler';
+import { UploadPipeline } from '../../src/anivartha/upload/pipeline';
 
 describe('DownloadHandler', () => {
   it('should get converted file', async () => {

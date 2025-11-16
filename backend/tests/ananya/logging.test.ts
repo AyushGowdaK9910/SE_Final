@@ -1,5 +1,5 @@
-import { ConversionLogger } from '../src/ananya/logging/conversionLogger';
-import { RetentionPolicy } from '../src/ananya/data-retention/retentionPolicy';
+import { ConversionLogger } from '../../src/ananya/logging/conversionLogger';
+import { RetentionPolicy } from '../../src/ananya/data-retention/retentionPolicy';
 
 describe('ConversionLogger', () => {
   it('should log conversions', async () => {

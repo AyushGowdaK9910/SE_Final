@@ -2,7 +2,7 @@
  * Stress/Test Harness for Small Files
  */
 
-import { FastConverter } from '../src/anivartha/fast-convert/fastConverter';
+import { FastConverter } from '../../src/anivartha/fast-convert/fastConverter';
 
 describe('FastConverter Stress Test', () => {
   it('should handle small files quickly', async () => {

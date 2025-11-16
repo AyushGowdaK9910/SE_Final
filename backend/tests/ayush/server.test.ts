@@ -3,8 +3,8 @@
  */
 
 import request from 'supertest';
-import app from '../src/ayush/server/server';
-import { HealthCheck } from '../src/ayush/server/healthcheck';
+import app from '../../src/ayush/server/server';
+import { HealthCheck } from '../../src/ayush/server/healthcheck';
 
 describe('Server', () => {
   it('should respond to health check', async () => {

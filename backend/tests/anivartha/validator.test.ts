@@ -1,6 +1,6 @@
-import { FileValidator } from '../src/anivartha/validator/fileValidator';
-import { MimeValidator } from '../src/anivartha/validator/mimeValidator';
-import { FileSignatureValidator } from '../src/anivartha/validator/fileSignature';
+import { FileValidator } from '../../src/anivartha/validator/fileValidator';
+import { MimeValidator } from '../../src/anivartha/validator/mimeValidator';
+import { FileSignatureValidator } from '../../src/anivartha/validator/fileSignature';
 
 describe('FileValidator', () => {
   it('should validate files', () => {

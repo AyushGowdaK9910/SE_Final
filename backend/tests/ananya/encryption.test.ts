@@ -1,4 +1,4 @@
-import { HttpsEnforcer } from '../src/ananya/encryption/httpsEnforcer';
+import { HttpsEnforcer } from '../../src/ananya/encryption/httpsEnforcer';
 import { Request, Response, NextFunction } from 'express';
 
 describe('HttpsEnforcer', () => {
