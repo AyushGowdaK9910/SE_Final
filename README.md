@@ -1,5 +1,7 @@
 # Converty Monorepo
 
+[![CI](https://github.com/your-org/converty-monorepo/workflows/CI/badge.svg)](https://github.com/your-org/converty-monorepo/actions)
+
 A monorepo containing file conversion service modules organized by team member contributions.
 
 ## Project Structure
