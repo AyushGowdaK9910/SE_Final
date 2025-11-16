@@ -24,6 +24,12 @@ jobs:
           cache: 'npm'
           cache-dependency-path: ${{ matrix.folder }}/package.json
       
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: ${{ matrix.folder }}/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('${{ matrix.folder }}/package-lock.json') }}
+      
       - name: Install dependencies
         working-directory: ${{ matrix.folder }}
         run: npm ci
