@@ -1,13 +1,30 @@
-// Fast in-memory converter
-// TODO: Implement fast conversion with timing
+/**
+ * In-Memory Fast Conversion Stub
+ */
+
+export interface ConversionResult {
+  buffer: Buffer;
+  durationMs: number;
+  size: number;
+}
 
 export class FastConverter {
-  async convert(input: Buffer, targetFormat: string): Promise<Buffer> {
+  /**
+   * Convert file in memory (stub)
+   */
+  async convert(sourceBuffer: Buffer, sourceFormat: string, targetFormat: string): Promise<ConversionResult> {
     const startTime = Date.now();
-    // TODO: Implement fast conversion
-    const duration = Date.now() - startTime;
-    console.log(`Conversion took ${duration}ms`);
-    return Buffer.from('');
+    
+    // TODO: Implement actual conversion logic
+    const result = Buffer.from('converted content');
+    
+    const durationMs = Date.now() - startTime;
+    
+    return {
+      buffer: result,
+      durationMs,
+      size: result.length,
+    };
   }
 }
 
