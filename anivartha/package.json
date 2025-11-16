@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "pretest": "mkdir -p /tmp && touch /tmp/jest-localstorage-anivartha || true",
-    "test": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage-anivartha' jest",
-    "test:watch": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage-anivartha' jest --watch",
+    "pretest": "mkdir -p /tmp || true",
+    "test": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage-anivartha-$$' jest",
+    "test:watch": "NODE_OPTIONS='--localstorage-file=/tmp/jest-localstorage-anivartha-$$' jest --watch",
     "lint": "eslint src tests --ext .ts",
     "lint:fix": "eslint src tests --ext .ts --fix"
   },
