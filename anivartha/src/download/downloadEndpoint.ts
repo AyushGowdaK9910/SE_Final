@@ -22,7 +22,7 @@ export class DownloadEndpoint {
     }
 
     try {
-      const buffer = await this.handler.getConvertedFile(id, format);
+      const buffer = await this.handler.downloadFile(id, format);
       res.setHeader('Content-Type', 'application/octet-stream');
       res.send(buffer);
     } catch (error) {

@@ -21,11 +21,10 @@ export class PipelineIntegration {
     targetFormat: string;
     size: number;
     durationMs: number;
-    originalFileId: string;
-    convertedFileId: string;
     status: 'success' | 'failed';
+    errorMessage?: string;
   }): Promise<void> {
-    await this.logger.logConversion(params);
+    await this.logger.log(params);
   }
 }
 

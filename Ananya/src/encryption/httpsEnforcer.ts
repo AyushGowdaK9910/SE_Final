@@ -13,7 +13,7 @@ export class HttpsEnforcer {
   static enforceHttps(req: Request, res: Response, next: NextFunction): void {
     // Check if request is secure (HTTPS)
     const isSecure = req.secure || req.headers['x-forwarded-proto'] === 'https';
-    
+
     // In production, reject non-HTTPS requests
     if (process.env.NODE_ENV === 'production' && !isSecure) {
       res.status(403).json({
@@ -25,7 +25,7 @@ export class HttpsEnforcer {
       });
       return;
     }
-    
+
     next();
   }
 }

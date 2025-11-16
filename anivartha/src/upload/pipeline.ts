@@ -11,7 +11,7 @@ export class UploadPipeline {
     this.uploadHandler = new UploadHandler();
   }
 
-  async processUpload(file: Express.Multer.File): Promise<{ fileId: string; ready: boolean }> {
+  async processUpload(file: any): Promise<{ fileId: string; ready: boolean }> {
     const uploaded = await this.uploadHandler.handleUpload(file);
     // TODO: Hook into conversion pipeline
     return {

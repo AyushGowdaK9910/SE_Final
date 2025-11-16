@@ -5,8 +5,19 @@ import { FileSignatureValidator } from '../src/validator/fileSignature';
 describe('FileValidator', () => {
   it('should validate files', () => {
     const validator = new FileValidator();
-    const result = validator.validateMimeType('text/plain', 'txt');
-    expect(result.isValid).toBe(true);
+    const result = validator.validateMIME('text/plain', 'txt');
+    expect(result).toBe(true);
+  });
+
+  it('should check file signature', () => {
+    const validator = new FileValidator();
+    const result = validator.checkFileSignature(Buffer.from('test'));
+    expect(result).toBe(true);
+  });
+
+  it('should check if format is supported', () => {
+    const validator = new FileValidator();
+    expect(validator.isSupported('txt')).toBe(true);
   });
 });
 

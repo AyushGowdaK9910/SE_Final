@@ -21,7 +21,7 @@ describe('UploadPipeline', () => {
       mimetype: 'text/plain',
       size: 100,
       buffer: Buffer.from('test'),
-    } as Express.Multer.File;
+    } as any;
     
     const result = await pipeline.processUpload(file);
     expect(result.ready).toBe(true);
