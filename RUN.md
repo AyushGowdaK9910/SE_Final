@@ -28,6 +28,9 @@ Only the **Ayush** module has a runnable server:
 ```bash
 cd Ayush
 
+# Build first (if not already built)
+npm run build
+
 # Development mode (with hot reload)
 npm run dev
 
@@ -36,6 +39,8 @@ npm start
 ```
 
 The server will start on **http://localhost:3000**
+
+**Note**: Make sure to run `npm run build` first before using `npm start` in production mode.
 
 ## Available Endpoints
 
