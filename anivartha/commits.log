@@ -1,3 +1,20 @@
-# Commits for anivartha/dev branch
-# This file will be populated after commits are created
-
+anivartha: init upload and validator modules and README
+anivartha: add file upload endpoint scaffold
+anivartha: implement MIME and extension validator
+anivartha: add file signature & corrupted-file checks
+anivartha: add rejection logic for unsupported files
+anivartha: add tests for validator and corrupted-file detection
+anivartha: implement download endpoint scaffold
+anivartha: hook upload -> conversion stub pipeline
+anivartha: implement in-memory fast conversion stub
+anivartha: add timing instrumentation to measure <3s target
+anivartha: optimize conversion stub and small file handling
+anivartha: add retries and transient error handling
+anivartha: add stress/test harness for small files
+anivartha: add cleanup of temporary files after conversion
+anivartha: add tests for download and pipeline end-to-end
+anivartha: add README usage and assigned CON keys
+anivartha: add commits.log listing this branch's commits
+anivartha: fix lint and test issues
+anivartha: add basic performance dashboard stub
+anivartha: merge-ready cleanup and comments
